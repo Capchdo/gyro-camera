@@ -21,3 +21,7 @@ Currently, there are two sets of Web APIs about orientation.
     - It gives [quaternion](https://en.wikipedia.org/wiki/Quaternion).
 
 This project uses `DeviceOrientationEvent`.
+
+## Credit
+
+This project was based on [Gyro-web: Accessing the device orientation in JavaScript | Trekhleb](https://trekhleb.dev/blog/2021/gyro-web/) ([0BSD License](https://github.com/trekhleb/trekhleb.github.io/blob/7b151f8ac9024c24b1df818f9308bcaf2d354943/LICENSE)). The Euler angles were interpreted incorrectly in that article, and I fixed it according to [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Device_orientation_events/Using_device_orientation_with_3D_transforms#using_orientation_to_rotate_an_element).

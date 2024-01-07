@@ -1,0 +1,9 @@
+/* Copied from https://github.com/trekhleb/trekhleb.github.io/blob/7b151f8ac9024c24b1df818f9308bcaf2d354943/src/components/shared/Toggle.css */
+
+input:checked ~ .toggle__dot {
+  transform: translateX(100%);
+}
+
+input:checked ~ .toggle__line {
+  background-color: #48bb78;
+}

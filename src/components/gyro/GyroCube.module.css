@@ -1,0 +1,62 @@
+/* Modified from https://github.com/trekhleb/trekhleb.github.io/blob/7b151f8ac9024c24b1df818f9308bcaf2d354943/src/posts/2021/gyro-web/components/GyroCube.css */
+
+.container {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 800px;
+    perspective-origin: center center;
+}
+
+.cube {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+}
+
+/* faces */
+.cube > * {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.front {
+    background-color: #d50000;
+    transform: translateY(100px) rotateX(-90deg);
+}
+
+.back {
+    background-color: #aa00ff;
+    transform: translateY(-100px) rotateY(180deg) rotateX(90deg);
+}
+
+.left {
+    background-color: #304ffe;
+    transform: translateX(-100px) rotateX(-90deg) rotateY(-90deg);
+}
+
+.right {
+    background-color: #0091ea;
+    transform: translateX(100px) rotateX(-90deg) rotateY(90deg);
+}
+
+.top {
+    background-color: #00bfa5;
+    transform: translateZ(100px);
+}
+
+.bottom {
+    background-color: #64dd17;
+    transform: translateZ(-100px) rotateX(180deg);
+}
